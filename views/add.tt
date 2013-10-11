@@ -3,10 +3,12 @@
 <script>
     $(document).ready(function() {
         $('.k-combobox input.k-input, .k-datepicker input.k-input').css({
-            "width" : "176px",
+            "width" : "211px",
             "margin-bottom" : "0px",
-            "font-size": "12px"
+            "font-size": "14px",
+            "color" : "#FFF"
         });
         $('.k-dropdownwrap').css("height", "30px");
+        $('.k-dropdown-wrap').css("width", "213px");
     });
 </script>

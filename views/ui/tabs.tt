@@ -1,0 +1,18 @@
+<div id="tabs">
+    <ul>
+        [% FOREACH tab IN options.tabs %]
+            <li><a href="#[% tab.key %]">[% tab.value.title %]</a></li>
+        [% END %]
+    </ul>
+    [% FOREACH tab IN options.tabs %]
+        <div id="[% tab.key %]">
+            [% tab.value.content %]
+        </div>
+    [% END %]
+</div>
+
+<script>
+    $(document).ready(function() {
+      $('#tabs').tabs();
+    });
+</script>

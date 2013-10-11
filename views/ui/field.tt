@@ -1,0 +1,6 @@
+<div class="field-holder">
+    <label for=[% field.model %].[% field.name %]>
+        [% field.display %]:
+    </label>
+    [% field_content %]
+</div>

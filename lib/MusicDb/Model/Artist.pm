@@ -1,0 +1,70 @@
+package MusicDb::Model::Artist;
+
+use Tie::IxHash;
+use MusicDb::Model;
+
+our @ISA = qw(MusicDb::Model);
+
+sub new {
+    my $class = shift;
+    my $self = {};
+    
+    bless($self, $class);
+    return $self;
+}
+
+sub fields {
+    
+    tie (my %fields, 'Tie::IxHash',
+         name => {
+            name => 'name',
+            display => 'Artist',
+            type => 'string',
+            value => '',
+            options => {},
+            model => 'artist',
+        },
+        description => {
+            name => 'description',
+            display => 'Biography',
+            type => 'text',
+            value => '',
+            options => {},
+            model => 'artist',
+        },
+		date_founded => {
+			name => 'date_founded',
+			display => 'Date Founded',
+			type => 'date',
+			value => '',
+			options => {},
+			model => 'artist',
+		},
+        picture => {
+            name => 'picture',
+            display => 'Picture',
+            type => 'upload',
+            value => '',
+            options => {},
+            model => 'artist',
+        },
+        country => {
+            name => 'country',
+            display => 'Country',
+            type => 'string',
+            value => '',
+            options => {},
+            model => 'artist',
+        }
+    );
+    return \%fields;
+}
+
+sub _fields {
+    my $self = shift;
+    
+    $self->{_fields} = &fields();
+    return $self;
+}
+
+1;

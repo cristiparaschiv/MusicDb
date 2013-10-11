@@ -1,18 +1,18 @@
 <div id="tabs">
     <ul>
         [% FOREACH tab IN options.tabs %]
-            <li><a href="#[% tab.key %]">[% tab.value.title %]</a></li>
+            <li><a href="#[% tab.dom_id %]">[% tab.title %]</a></li>
         [% END %]
     </ul>
     [% FOREACH tab IN options.tabs %]
-        <div id="[% tab.key %]">
-            [% tab.value.content %]
+        <div id="[% tab.dom_id %]">
+            [% tab.content %]
         </div>
     [% END %]
 </div>
 
 <script>
-    $(document).ready(function() {
+    //$(document).ready(function() {
       $('#tabs').tabs();
-    });
+    //});
 </script>

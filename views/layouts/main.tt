@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="[% request.uri_base %]/css/kendo.black.min.css" />
 <link rel="stylesheet" href="[% request.uri_base %]/css/dot-luv/jquery-ui-1.10.3.custom.css" />
 <link rel="stylesheet" href="[% request.uri_base %]/css/common.css" />
+<link rel="stylesheet" href="[% request.uri_base %]/css/menu1.css" />
 
 
 <script type="text/javascript" language="javascript" src="[% request.uri_base %]/javascripts/jquery-1.9.1.js"></script>
@@ -20,7 +21,7 @@
     <div id="container">
         <div id="logo">LOGO HERE</div>
         <div id="menu">
-       [%# INCLUDE menu.tt %]     
+       [% INCLUDE menu.tt %]     
 
     
             

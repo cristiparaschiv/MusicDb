@@ -16,7 +16,7 @@ sub new {
 use MusicDb::UI::Tabs;
     
 my $tab = new MusicDb::UI::Tabs({
-    tabs => {
+    tabs => [
         'tab1' => {
             title => 'First Tab',
             content => '<p>Text inside first tab</p>',
@@ -25,7 +25,7 @@ my $tab = new MusicDb::UI::Tabs({
             title => 'Seconds Tab',
             content => '<p>Text inside seconds tab</p>'
         }
-    }
+    ]
 });
 
 =CUT

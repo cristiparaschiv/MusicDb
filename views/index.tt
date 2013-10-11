@@ -1,18 +1,1 @@
-<div id="tabs">
-  <ul>
-    <li><a href="#tab-1">Tab1</a></li>
-    <li><a href="#tab-2">Tab2</a></li>
-  </ul>
-  <div id="tab-1">
-    <p>test test test test</p>
-  </div>
-  <div id="tab-2">
-    <p>kjkfdj fjdkfjdkf kjdkfj dfdk</p>
-  </div>
-</div>
-
-<script>
-$(document).ready(function() {
-  $('#tabs').tabs();
-});
-</script>
+Nothing here for the moment.

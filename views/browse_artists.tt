@@ -1,0 +1,33 @@
+<h2 id="artist_name">Browse Artists</h2>
+<br><br>
+
+<div id="grid" style="width:700px;margin-left:auto;margin-right:auto"></div>
+
+<script>
+	$(document).ready(function() {
+		//$('#artists').dataTable();
+		//$('#artists').kendoGrid();
+		
+		var dataSource = [% grid.datasource %],
+				columns = [% grid.columns %];
+	//console.log(dataSource);
+	//console.log(columns);	
+		$('#grid').kendoGrid({
+				dataSource: dataSource,
+				columns: columns,
+				selectable: true,
+		});
+		
+		//console.log([% ds %]);
+		
+		$(document).on('click', '.k-grid-view', function(e) {
+				e.preventDefault();
+				var grid = $('#grid').data('kendoGrid');
+				var selectedRow = grid.select();
+				var dataItem = grid.dataItem(selectedRow);
+				var id = dataItem.id;
+				
+				$(location).attr('href', '/artist/view/' + id);
+		});
+	} );
+</script>

@@ -31,7 +31,7 @@ sub _metadata {
     foreach my $field (keys %{$fields->{_fields}}) {
         $fields->{_fields}->{$field}->{value} = $values->{$field} // '';
 		if ($fields->{_fields}->{$field}->{type} eq 'date' and defined $values->{$field}) {
-			my $formated_date = WebApp::Helper->db_to_date($values->{$field});
+			my $formated_date = MusicDb::Helper->db_to_date($values->{$field});
 			$fields->{_fields}->{$field}->{value} = $formated_date;
 		}
         push @$metadata, $fields->{_fields}->{$field};

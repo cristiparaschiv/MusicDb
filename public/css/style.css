@@ -67,12 +67,15 @@ div#menu {
     border-radius: 5px 5px 0 0;
     /*background-color: #F0713A;*/
     background-color:#1A1A1A;
+    border-bottom: solid 5px;
+    border-bottom-color: #2B2B2B;
 }
 
 div.wrapper {
     background: none repeat scroll 0 0 #1A1A1A;
     border-radius: 0 0 5px 5px;
     padding: 20px;
+    color: #FFF;
 }
 
 /* FORM */
@@ -113,21 +116,21 @@ textarea {
     background: gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
 }
 input[type=text] { 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-	background: -moz-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-	background: -o-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-	background: -ms-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-	background:  gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
+    background: -moz-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
+    background: -o-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
+    background: -ms-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
+    background:  gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
 }
 input[type=submit], button {
     width: auto;
     padding: 0.25em 1em;
     line-height: 1.5em;
     background: -webkit-gradient(linear, left top, left bottom, from(#a00), to(#600));
-	background: -moz-gradient(linear, left top, left bottom, from(#a00), to(#600));
-	background: -o-gradient(linear, left top, left bottom, from(#a00), to(#600));
-	background: -ms-gradient(linear, left top, left bottom, from(#a00), to(#600));
-	background: gradient(linear, left top, left bottom, from(#a00), to(#600));
+    background: -moz-gradient(linear, left top, left bottom, from(#a00), to(#600));
+    background: -o-gradient(linear, left top, left bottom, from(#a00), to(#600));
+    background: -ms-gradient(linear, left top, left bottom, from(#a00), to(#600));
+    background: gradient(linear, left top, left bottom, from(#a00), to(#600));
     border: 2px solid #c00;
     text-shadow: 0 0 2px #300;
     font-weight: bold;
@@ -143,10 +146,10 @@ input[type=reset] {
     padding: 0.25em 1em;
     line-height: 1.5em;
     background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#222));
-	background: -moz-gradient(linear, left top, left bottom, from(#333), to(#222));
-	background: -o-gradient(linear, left top, left bottom, from(#333), to(#222));
-	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#222));
-	background: gradient(linear, left top, left bottom, from(#333), to(#222));
+    background: -moz-gradient(linear, left top, left bottom, from(#333), to(#222));
+    background: -o-gradient(linear, left top, left bottom, from(#333), to(#222));
+    background: -ms-gradient(linear, left top, left bottom, from(#333), to(#222));
+    background: gradient(linear, left top, left bottom, from(#333), to(#222));
     border: 2px solid #444;
     text-shadow: 0 0 2px #300;
     font-weight: bold;

@@ -19,7 +19,9 @@
 </head>
 <body>
     <div id="container">
-        <div id="logo">LOGO HERE</div>
+        <div id="logo">
+			<img src="[% request.uri_base %]/images/logo.png">
+		</div>
         <div id="menu">
        [% INCLUDE menu.tt %]     
 

@@ -81,7 +81,7 @@ sub submit {
 
 	foreach my $field (@$metadata) {
 		if ($field->{type} eq 'date' and $params->{"$model.$field->{name}"} ne '') {
-			$params->{"$model.$field->{name}"} = WebApp::Helper->parse_date($params->{"$model.$field->{name}"});
+			$params->{"$model.$field->{name}"} = MusicDb::Helper->parse_date($params->{"$model.$field->{name}"});
 		}
 		if ($field->{type} eq 'boolean' and defined $params->{"$model.$field->{name}"}) {
 			$params->{"$model.$field->{name}"} = 1;
